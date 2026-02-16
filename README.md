@@ -1,5 +1,5 @@
 # rocket-launcher
-a client for minecraft. idk if this is wrong, as it dosen't let people connect to servers.
+a client for minecraft. it dosen't let people connect to `online-mode` servers. i need to add login
 
 ## install
 ### requirements

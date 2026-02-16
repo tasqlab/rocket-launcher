@@ -1,0 +1,22 @@
+{
+  "name": "rocketlauncher",
+  "version": "1.0.1",
+  "description": "A custom Minecraft launcher",
+  "main": "main.js",
+  "author": "Hackitech Industries",
+  "license": "MIT",
+
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win --config win-only.json"
+  },
+
+  "dependencies": {
+    "extract-zip": "^2.0.1"
+  },
+
+  "devDependencies": {
+    "electron": "28.3.3",
+    "electron-builder": "24.13.3"
+  }
+}

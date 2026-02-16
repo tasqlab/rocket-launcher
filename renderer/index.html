@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Rocket Launcher</title>
+
+  <!-- Poppins font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Your external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- DRAGGABLE TOP BAR -->
+  <div id="dragBar"></div>
+
+  <!-- WINDOW BUTTONS -->
+  <div id="windowControls">
+    <button id="minBtn">–</button>
+    <button id="maxBtn">□</button>
+    <button id="closeBtn">X</button>
+  </div>
+
+  <!-- LUNAR-STYLE USERNAME -->
+  <div id="topRightUser">Logged in as: <span id="profileName">Player</span></div>
+
+  <!-- LEFT TABS -->
+  <div id="sidebar">
+    <div class="tab active" data-tab="play">▶ Play</div>
+    <div class="tab" data-tab="mods">📦 Mods</div>
+    <div class="tab" data-tab="profiles">👤 Profiles</div>
+    <div class="tab" data-tab="settings">⚙ Settings</div>
+  </div>
+
+  <!-- MAIN UI -->
+  <div id="content">
+    <h1>Rocket Launcher</h1>
+
+    <div id="profileBox">Selected Profile: <span id="profileLabel">Default</span></div>
+
+    <select id="versionSelect"></select>
+    <input id="usernameInput" placeholder="Username" />
+    <button id="launchBtn">Launch</button>
+
+    <p id="status"></p>
+
+    <!-- loading bar (added) -->
+    <div id="loadingBarContainer">
+      <div id="loadingBar"></div>
+    </div>
+  </div>
+
+  <!-- online/offline toggle (added) -->
+  <div id="onlineToggle">
+    <span id="modeLabel">Offline mode</span>
+    <label>
+      <input type="checkbox" id="onlineCheckbox">
+      <!--Online-->
+    </label>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "appId": "com.rocketlauncher.app",
+  "productName": "Rocket Launcher",
+
+  "directories": {
+    "output": "dist"
+  },
+
+  "files": [
+    "**/*",
+    "!dist",
+    "!installer",
+    "game/**/*"
+  ],
+
+  "extraResources": [
+    {
+      "from": "game",
+      "to": "game"
+    }
+  ],
+
+  "win": {
+    "target": "nsis",
+    "icon": "icon.ico"
+  },
+
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "Rocket Launcher"
+  }
+}

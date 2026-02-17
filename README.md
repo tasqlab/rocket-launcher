@@ -5,7 +5,7 @@ a client for minecraft. it dosen't let people connect to `online-mode` servers. 
 ### requirements
 you need  
  - Node.js 18
- - java
+ - java 17 or higher
  - electron [npm install electron --save-dev]
 
 > IMPORTANT: Running scripts should be enabled. run `Set-ExecutionPolicy AllSigned` IN ADMIN
